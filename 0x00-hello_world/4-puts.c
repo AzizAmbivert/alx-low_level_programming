@@ -1,4 +1,5 @@
 #!/bin/bash
+/* puts function */
 #include<stdio.h>
  int main()
 {
