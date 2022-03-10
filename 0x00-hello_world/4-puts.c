@@ -1,12 +1,12 @@
-#!/bin/bash
+
 /* puts function */
 #include <stdio.h>
 #include <string.h>
  int main()
 {
-char str1[50];
+char str1[70];
 strcpy(str1, "Programming is like building a maltilingual puzzle\n");
-puts(str1)
+puts(str1);
 return (0);
 }
 
