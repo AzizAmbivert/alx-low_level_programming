@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include "stdio.h"
+#include "stdlib.h"
 
 /**
  *print_alphabet - Check description
@@ -11,6 +12,6 @@ void print_alphabet(void)
 	char i;
 
 	for (i = 'a'; i <= 'z'; i++)
-		putchar(i);
+	putchar(i);
 	putchar('\n');
 }
