@@ -14,7 +14,7 @@ void print_triangle(int size)
 	{
 		for (linelen = size; linelen > linenum; --linelen)
 			_putchar(' ');
-		for ( ; linelen > 0; --linelen)
+		for (linelen > 0; --linelen)
 			_putchar('#');
 			_putchar('\n');
 	}
