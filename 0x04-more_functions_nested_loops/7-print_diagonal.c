@@ -1,22 +1,26 @@
 #include "main.h"
 
 /**
- *print_diagonal - draw a diagonal line in the terminal
- *@n: size of diagonal line
- *Return: void
- */
+ *  * print_diagonal - Draws a diagonal line using the \ character.
+ *   * @n: The number of \ characters to be printed.
+ *    */
 void print_diagonal(int n)
 {
-	int linenum;
-	int linelen;
+	int len, space;
 
-	for (linenum = 0; linenum < n; ++linenum)
+	if (n > 0)
 	{
-		for (linelen = 0; linelen < linenum; ++linelen)
-			_putchar(' ');
-			_putchar('\');
+		for (len =0; len < n; len++)
+		{
+			for (space = 0; space < len; space++)
+				_putchar(' ');
+			_putchar('\\');
+
+			if (len == n - 1)
+				continue;
+
 			_putchar('\n');
+		}
 	}
-	if (n <= 0)
 	_putchar('\n');
 }
