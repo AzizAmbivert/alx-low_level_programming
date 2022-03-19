@@ -22,7 +22,7 @@ int main(void)
 				prime /= div;
 		}
 	}
-	print("%ld\n", prime);
+	printf("%ld\n", prime);
 
 	return (0);
 }
