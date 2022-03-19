@@ -1,24 +1,28 @@
 #include "main.h"
 
 /**
- *print_triangle - print a triangle in the terminal
- *@size: base & height of triangle
- *Return: void
+ *print_triangle - Prints a triangle, using the character #.
+ *@size: The size of the triangle.
  */
 void print_triangle(int size)
 {
-	int linenum;
-	int linelen;
+	int hash, index;
 
-	for (linenum = 1; linenum <= size; ++linenum)
+	if (size > 0)
 	{
-		for (linelen = size; linelen > linenum; --linelen)
-			_putchar(' ');
-		for (linelen > 0; --linelen)
-			_putchar('#');
-			_putchar('\n');
-	}
+		for (hash = 1; hash <= size; hash++)
+		{
+			for (index = size - hash; index > 0; index--)
+				_putchar(' ');
 
-		if (size <= 0)
+			for (index = 0; index < hash; index++)
+				_putchar('#');
+
+			if (hash == size)
+				continue;
+
 			_putchar('\n');
+		}
+	}
+	_putchar('\n');
 }
