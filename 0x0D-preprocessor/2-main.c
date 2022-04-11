@@ -1,6 +1,12 @@
 #include <stdio>
 #include <stdlib>
+/**
+ *main - prints the name of the file it was compiled from
+ *@void: accepts nothing
+ *Return: 0 on success
+ */
 int main(void)
 {
 	printf("File:%s\n", _FILE_);
+	return (0);
 }
