@@ -1,5 +1,5 @@
-#include <stdio>
-#include <stdlib>
+#include <stdio.h>
+#include <stdlib.h>
 /**
  *main - prints the name of the file it was compiled from
  *@void: accepts nothing
@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	printf("File:%s\n", _FILE_);
+	printf("File:%s\n", __FILE__);
 	return (0);
 }
